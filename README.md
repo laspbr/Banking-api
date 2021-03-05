@@ -35,8 +35,8 @@ Sua missão é desenvolver alguns testes automatizados para a nossa API pública
 
 Para você desenvolver o desafio, utilize a seguinte conta que foi criada no nosso ambiente de Sandbox com dados fictícios.
 
-username - desafioqastone@gmail.com
-password - desafioqa
+- username - desafioqastone@gmail.com
+- password - desafioqa
 
 Você consegue acessar sua conta por esse link: https://sandbox.conta.stone.com.br/login.
 
@@ -49,7 +49,7 @@ curl https://login.sandbox.stone.com.br/auth/realms/stone_account/protocol/openi
 	  -d 'client_id=admin-cli' \
 	  -d 'username=YYYYYYYYY' \
 	  -d 'password=ZZZZZZZZZ' \
-    -d 'grant_type=password'
+          -d 'grant_type=password'
 ```
 
 Isso te devolverá um `access_token`. Use-o para se autenticar nas chamadas para a API.
@@ -59,7 +59,7 @@ Você pode fazer transferências internas para essa conta:
 - Agência: 0001  
 - Conta: 475384
 
-## Cenário
+### Cenário
 
 A Stone possui uma API de [OpenBanking](https://en.wikipedia.org/wiki/Open_banking) que estamos testando e evoluindo continuamente. O link para a documentação de referência é https://docs.openbank.stone.com.br/. 
 
@@ -86,7 +86,7 @@ Levaremos em conta os seguintes fatores:
 - Geração de relatórios/métricas de qualidade;
 - Conhecimento de GIT.
 
-## Como operar na API de sandbox da Stone OpenBanking?
+### Como operar na API de sandbox da Stone OpenBanking?
 
 Todos os endpoints possuem autenticação. Utilizamos OAuth2 e OpenID Connect como especificações de autenticação e autorização. Para o desafio de QA, criamos uma "client application" e um usuário para os testes:
 
@@ -101,7 +101,7 @@ curl https://login.sandbox.stone.com.br/auth/realms/stone_account/protocol/openi
 	  -d 'client_id=XXXXXXXXXX' \
 	  -d 'username=YYYYYYYYY' \
 	  -d 'password=ZZZZZZZZZ' \
-    -d 'grant_type=password'
+          -d 'grant_type=password'
 ```
 
 ## Envio do desafio
